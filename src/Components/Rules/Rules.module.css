@@ -1,0 +1,146 @@
+
+.RulesMain{
+    /* font-family: "Azonix"; */
+    overflow-x: hidden;
+    font-weight: 400;
+}
+
+.gap{
+    padding-top: 0;
+    margin-top: -2rem;
+}
+
+.CoverArea{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Logo{
+    height: 7rem;
+    padding: 1rem;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.Rheader{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    color: white;    
+}
+
+
+.header1{
+    font-size: 1.9rem;
+    font-family: "Azonix";
+    padding: 0.5rem;
+    /* padding-top: 1rem; */
+    margin-top: 6.3rem;
+}
+
+.header2{
+    margin-top:0.5rem;
+    margin-bottom:0.5rem;
+    font-size: 1.1rem;
+    font-family: "MyriadPro";
+    font-weight: 400;
+}
+
+.header3{
+    font-size: 1.9rem;
+    font-family: "Azonix";
+    padding: 0.5rem 0.5rem 2rem 0.5rem;
+}
+
+.bino{
+    position: relative;
+    top: 5rem;
+    right: 1rem;
+    z-index: 2;
+    /* user-drag: none; */
+    user-select: none;
+}
+
+.bino img{
+    width: 10rem;
+}
+
+.Rcard{
+        margin: 0rem 0.5rem 0.1rem 1rem;
+        padding: 1rem;
+        width: 95%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+   
+        color: white;   
+        border: 1px solid white;
+        border-radius: 2rem;;
+
+        backdrop-filter: blur(4px);
+        /* box-shadow: inset 0 0 0 200px hsl(0deg 0% 100% / 5%); */
+        background-color: rgba(240,230,230,.09);
+}
+
+.text{
+    font-weight: 400 !important;
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 2.9rem;
+    font-family: "MyriadPro";
+}
+
+.cash{
+    display:block;
+    position: relative;
+    top: -8rem;
+    right: -2rem;
+    z-index: 2;
+    float: right;
+}
+
+.cash img{
+    display:block;
+    width: 10rem;
+}
+
+@media only screen and (max-width:1028px)
+{
+    .Rcard{
+        margin-right: 1.6rem;
+    }
+
+    .Logo{
+        height: 6rem;
+        margin-bottom: 1rem;
+    }
+    .bino img{
+        width: 8rem;
+    }
+
+    .cash{
+        display:block;
+        position: relative;
+        top: -5rem;
+        right: 1rem;
+        z-index: 2;
+        float: right;
+    }
+    
+    .cash img{
+        display:block;
+        width: 10rem;
+    }
+    
+    
+}

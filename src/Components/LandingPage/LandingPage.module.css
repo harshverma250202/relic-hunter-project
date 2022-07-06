@@ -1,0 +1,112 @@
+.CoverArea{
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: hidden;    /* height: 100vh; */
+    
+}
+
+.Logo{
+    height: 7rem;
+    padding: 1rem;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.man{
+    margin-top: 7.2rem;
+    display: flex;
+    justify-content: center;
+}
+.man img{
+    width: 22vw;
+    min-width: 250px;
+    user-select: none;
+    /* margin: auto; */
+}
+
+.slot{
+    color: white;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    color: white;
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+}
+.text:hover{
+    color: white;
+}
+.textimg{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.texti{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+
+.texti img{
+    width: 30%;
+}
+
+.lowInp{
+    margin: 1rem;
+    font-family: azonix;
+    cursor: pointer;
+}
+
+.lowInp button:hover a{
+    color: black;
+}
+
+.lowInp button{
+    color: white;
+    background-color: rgb(109, 110, 111, 0.6);
+    border: none;
+    padding: 0.4rem 1rem 0.4rem 1rem ;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    text-align: left;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.lowInp button:hover{
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.lin{
+    color: white;
+}
+
+@media only screen and (max-width:1028px)
+{
+    .texti img{
+        width: 49%;
+    }
+    
+    .text{
+        font-size: 3rem;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+}

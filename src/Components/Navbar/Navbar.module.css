@@ -1,0 +1,213 @@
+.Outer{
+    color: white;
+    z-index: 4;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    height: 5.7rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    position: fixed;
+    width: 100vw;
+    transition: all 1s ease;
+  }
+
+  .Inner, .Closed{
+    display:none;
+  }
+
+.Logo{
+    height: 6rem;
+    padding: 1rem;
+    width: 30%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.Limks a{
+    text-decoration:none;
+    color: white;
+}
+
+.dec{
+    border-bottom: 1px solid whitesmoke;
+}
+
+.Limks{
+    padding: 1rem;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    align-items: center;
+    font-family: azonix;
+    width: 40%;
+    font-size: 1.15rem;
+}
+
+.IndLimk:hover{
+  text-shadow: 0 0 2px white;
+}
+
+.checker, .hamLogo{
+  display: none;
+}
+
+/* =============================== */
+.Logo2{
+  height: 6rem;
+  padding: 1rem;
+  width: 30%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.Limks2 a{
+  text-decoration:none;
+  color: white;
+}
+
+.dec2{
+  border-bottom: 1px solid whitesmoke;
+}
+
+.Limks2{
+  padding: 1rem;
+  color: white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:space-around;
+  align-items: center;
+  font-family: azonix;
+  width: 40%;
+  font-size: 1.15rem;
+}
+
+.IndLimk2:hover{
+text-shadow: 0 0 2px white;
+}
+
+.checker, .hamLogo2, .innerOut{
+  display: none;
+}
+
+/* =============================== */
+
+@media only screen and (max-width:1190px){
+  .Limks{
+    width: 60%;
+  }
+  .checker,.hamLogo,.hamLogo2{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 998px){
+  .Outer,.Limks,.IndLimk,.Logo,.Logo img{
+    display: none;
+    max-height: 0;
+  }
+
+  .hamLogo3{
+    position:fixed;
+    /* display: none; */
+    /* height:0; */
+    top: 1rem;
+    left: 2.96rem;
+    width: 0;
+    z-index: 30;
+    transition: all 0.5s ease;
+  }
+  
+  .hamLogo3.Closed{
+    display: block;
+    position:fixed;
+    top: 1rem;
+    left: 2.96rem;
+    width: 2rem;
+  }
+  
+  .hamLogo3 .checker{
+    width:0;
+  }
+  .hamLogo3.Closed .checker{
+    width:2rem;
+  }
+
+  .checker,.hamLogo2{
+    margin-top: 1rem;
+    display: block;
+    top: 2rem;
+    left: 2rem;
+    height: 2rem;
+    margin-left: -1rem;
+  }
+
+  .Inner{
+    color: white;
+    z-index: 10;
+    align-items:flex-start;
+    justify-content: flex-start;
+    flex-flow: column wrap;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    min-width: 18rem;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+    position: fixed;
+    top: 0;
+    transition: all 0.5s ease;
+    display: flex;
+    width: 70vw;
+    max-width: 70vw;
+    align-items:flex-start;
+    justify-content: flex-start;
+    flex-flow: column wrap;
+    height: 100vh;
+    padding-left: 4rem;
+    left: -100%;
+    opacity:0;
+  }
+
+  .Inner.Closed{
+    opacity: 1;
+    left:0;
+  }
+
+  .CHalHat{
+    max-width: 0vw; 
+  }
+  /* .Inner .Out{ */
+  /* background-color: transparent; */
+  /* backdrop-filter: none; */
+/* } */
+  
+  .Logo2{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    margin-left: -1rem;
+    margin-bottom: 2rem;
+  }
+  .Logo2 img{
+    width: 45vw;
+    height: 16vw;
+    /* min-width: 100%; */
+  }
+  .Limks2{
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 2rem;
+    height: 40%;
+    width: 100%;
+  }
+  
+  .IndLimk2{
+    padding-top: 2rem;
+  }
+  
+}
